@@ -1,0 +1,351 @@
+ body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+    background: url(../images/61.png);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Intro */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+   
+    
+}
+.intro_title{
+    position: absolute;
+    left: 300;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 360px;
+    height: 80px;
+    background-color:darkgray;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+
+}
+.intro_image{
+    position: absolute;
+    left: 50;
+    background-image: url(../images/Hi.png);
+    width: 256;
+    height: 256;
+
+}
+.intro_skill1 , .intro_skill2 , .intro_skill3 , .intro_skill4 , .intro_skill5{
+    position: absolute;
+    width: 50;
+    height: 50;
+}
+.intro_skill1{
+    background: url(../images/html.png);
+    left: 800;
+    background-size: cover;
+}
+.intro_skill2{
+
+    background: url(../images/js.png);
+    left: 860;
+    top: 45;
+    background-size: cover;
+
+}
+.intro_skill3{
+    background: url(../images/php.png);
+    left: 920;
+    background-size: cover;
+}
+.intro_skill4{
+    background: url(../images/ps.png);
+    background-size: cover;
+    left: 980;
+    top: 45;
+}
+.intro_skill5{
+    background: url(../images/ux.png);
+    background-size: cover;
+    left: 1040;
+    
+}
+.intro_skill1:hover , .intro_skill2:hover , .intro_skill3:hover , .intro_skill4:hover , .intro_skill5:hover{
+    border: 1px solid #4cb9c3;
+    border-radius: 50px;
+    box-shadow: 10px black;
+    transition: 0.1s;
+}
+
+/*Header*/
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    background: linear-gradient(180deg, #3A3737 63.54%, rgba(65, 65, 65, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+}
+.header_logo:hover{
+    color: rgba(186, 3, 3, 1);
+    transition: color 0.3s linear;
+    
+}
+
+/* Nav */
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15;
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.nav_link:after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: 'opacity' 0.2s linear;
+}
+.nav_link:hover{
+    color: aqua;
+}
+.nav_link:hover:after{
+    opacity: 1;
+}
+/* About */
+.Info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+}
+.About{
+    text-align: center;
+    color: aliceblue;
+}
+.About_txt{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 850;
+    top: 150;
+    text-align:justify;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.About_img1,.About_img2,.About_img3{
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: absolute;
+    width: 270;
+    height: 370;
+}
+.About_img1{
+    background: url(../Photo1.jpg);
+    background-size: cover;
+    left: 355px;
+    top: 130px;
+}
+.About_img2{
+    background: url(../Photo2.jpg);
+    background-size: cover;
+    top: 300px;
+    left:50px;  
+}
+.About_img3{
+    background: url(../Photo3.jpg);
+    background-size: cover;
+    left: 355px;
+    top: 545px;
+}
+.me3{
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    left: 900;
+    top: 669;
+    background: url(../images/Hi2.png);
+    background-size: cover;
+
+}
+/* Projects */
+.jobs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+
+}
+.container_1{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project{
+    color: aliceblue ;
+    position: absolute;
+    text-align: center;
+    top: 900px;
+    left: 550px;
+}
+.prjct{
+    display:flex;
+    position: relative;
+
+    vertical-align: middle;
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    top: 1000px;
+}
+.prjct1{
+    display:flex;
+    position: relative;
+
+    vertical-align: middle;
+    width: 1200px;
+    height: 150px;
+
+    position: absolute;
+    top: 1200px;
+}
+.icon,.icon1{
+border: 2px solid black;
+border-radius: 75px;
+}
+.icon{
+    width: 150px;
+    height: 150px;
+    background: url(../images/Log_komfort.jpeg);
+    background-size: cover;
+}
+.icon1{
+    width: 150px;
+    height: 150px;
+    background: url(../images/Logo_fastscol.png);
+    background-size: cover;
+}
+.txt,.txt1{
+   color: aliceblue;
+    width: 950px;
+    height: 150px;
+   margin-left: 100;
+    margin-top: 20;
+}
+/* footer */
+.footer{  
+    position: absolute;  
+top: 2150;
+width: 100%;   
+height: 120px; 
+background: linear-gradient(180deg, rgba(6, 6, 6, 0) 0%, #3B3737 100%);
+
+}
+.fot_row{
+    display: flex;
+}
+.nav{
+    list-style-type: none;
+}
+.foot_nav{
+    left: 100px;
+    margin-top: 10px;
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.foot_nav:hover{
+    color: aqua;
+}
+.contact{
+    left:300px;
+    margin-top: 10px;
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    list-style-type: none;
+}
+.contact_link{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.contact_link:hover{
+    color: aqua;
+}
+.foot_logo{
+    background: url(../images/logo.png);
+    background-size: cover;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+   left: 900px;
+   top: 15px;
+}
+.coperaite{
+    position: absolute;
+    top: 80px;
+    left: 900px;
+}
+.foot_logo_txt{
+    position: absolute;
+    left:965px;
+    top: 25px;
+    font-size: 20;
+}

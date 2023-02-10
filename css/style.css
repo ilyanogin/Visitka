@@ -191,19 +191,19 @@
     height: 370;
 }
 .About_img1{
-    background: url(../Photo1.jpg);
+    background: url(../images/Photo1.jpg);
     background-size: cover;
     left: 355px;
     top: 130px;
 }
 .About_img2{
-    background: url(../Photo2.jpg);
+    background: url(../images/Photo2.jpg);
     background-size: cover;
     top: 300px;
     left:50px;  
 }
 .About_img3{
-    background: url(../Photo3.jpg);
+    background: url(../images/Photo3.jpg);
     background-size: cover;
     left: 355px;
     top: 545px;
